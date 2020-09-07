@@ -26,12 +26,12 @@ class _NavigationsState extends State<Navigations> {
         }),
         items: [
           BottomNavyBarItem(
-            activeColor: Colors.blue,
+            activeColor: Colors.blue[900],
             icon: Icon(Icons.home, color: Colors.blue),
             title: Text('Home'),
           ),
           BottomNavyBarItem(
-            activeColor: Colors.blue,
+            activeColor: Colors.blue[900],
             icon: Icon(Icons.person, color: Colors.blue),
             title: Text('Leaders'),
           ),
