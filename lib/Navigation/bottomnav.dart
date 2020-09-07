@@ -1,6 +1,7 @@
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:smhoschoir/Screens/Home.dart';
+import 'package:smhoschoir/Screens/Leaders.dart';
 class Navigations extends StatefulWidget {
   // static const routeName = '/nav';
   @override
@@ -9,7 +10,8 @@ class Navigations extends StatefulWidget {
 
 class _NavigationsState extends State<Navigations> {
   final List<Widget> _pages = [
-    Home()
+    Home(),
+    Leaders()
   ];
   int _selectedIndex = 0;
 
