@@ -35,10 +35,11 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
       body: Column(
         children: [
-          SizedBox(height: MediaQuery.of(context).size.height/5),
+          SizedBox(height: MediaQuery.of(context).size.height / 5),
           Center(
             child: Container(
-              height: 500,
+              // height: 500,
+              height: MediaQuery.of(context).size.height / 2,
               width: 300,
               decoration: BoxDecoration(
                 image: DecorationImage(
@@ -46,19 +47,15 @@ class _SplashScreenState extends State<SplashScreen> {
               ),
             ),
           ),
-
           TyperAnimatedTextKit(
             speed: Duration(milliseconds: 160),
-          onTap: () {
+            onTap: () {
               print("Tap Event");
             },
-          text: [
-            "House of Judah",
-          ],
-          textStyle: TextStyle(
-              fontSize: 20.0,
-              fontFamily: "Bobbers"
-          ),
+            text: [
+              "House of Judah",
+            ],
+            textStyle: TextStyle(fontSize: 20.0, fontFamily: "Bobbers"),
           ),
         ],
       ),

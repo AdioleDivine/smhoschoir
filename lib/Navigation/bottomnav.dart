@@ -2,6 +2,8 @@ import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:smhoschoir/Screens/Home.dart';
 import 'package:smhoschoir/Screens/Leaders.dart';
+import 'package:smhoschoir/Screens/otherMembers.dart';
+
 class Navigations extends StatefulWidget {
   // static const routeName = '/nav';
   @override
@@ -11,7 +13,8 @@ class Navigations extends StatefulWidget {
 class _NavigationsState extends State<Navigations> {
   final List<Widget> _pages = [
     Home(),
-    Leaders()
+    OtherMembers(),
+    Leaders(),
   ];
   int _selectedIndex = 0;
 
@@ -34,8 +37,13 @@ class _NavigationsState extends State<Navigations> {
           ),
           BottomNavyBarItem(
             activeColor: Colors.blue[900],
+            icon: Icon(Icons.people, color: Colors.blue),
+            title: Text('Members'),
+          ),
+          BottomNavyBarItem(
+            activeColor: Colors.blue[900],
             icon: Icon(Icons.person, color: Colors.blue),
-            title: Text('Leaders'),
+            title: Text('Profile'),
           ),
         ],
       ),
